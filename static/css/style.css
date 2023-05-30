@@ -1,0 +1,715 @@
+@charset "UTF-8";
+
+html,
+body {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+}
+
+/*段落・フォント*/
+
+p {
+    line-height: 1.7;
+    font-weight: 400;
+    color: #1a1a1a;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+    padding: 30px 0 40px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        font-size: 40px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* 画像
+******************************************************************************/
+
+.icm {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.ic {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.btn {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+
+
+
+/* 文字
+******************************************************************************/
+
+.fsb {
+    font-size: 130%;
+}
+
+.fsb2 {
+    font-size: 130%;
+}
+
+
+.e1 {
+    color: #eb6d8e;
+    font-weight: 900;
+}
+
+.e2 {
+    background: #FFFF00;
+    font-weight: 900;
+}
+
+.e3 {
+    color: #e93366;
+    font-weight: 900;
+}
+
+.e4 {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.e5 {
+    color: #65afc9;
+    font-weight: 900;
+}
+
+
+
+
+
+/* ヘッダー
+******************************************************************************/
+
+
+
+.head_btn {
+    position: absolute;
+    top: 1320px;
+    right: 0px;
+    width: 280px;
+}
+
+/* WebP未対応のブラウザ用のスタイル */
+.head {
+    width: 100vw;
+    height: auto;
+    background-image: url(../img/headBG_pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+/* WebP対応のブラウザ用のスタイル */
+.webp .head {
+    width: 100vw;
+    height: 1637px;
+    background-image: url(../img/headBG_pc.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.headtx {
+    width: 1280px;
+    margin: 0px auto;
+    line-height: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+/* コンテンツ
+******************************************************************************/
+
+.wrap {
+    overflow: hidden;
+}
+
+.content {
+    width: 900px;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    padding: 80px 20px;
+}
+
+.content2 {
+    width: 900px;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    position: relative;
+}
+
+.bg_pk {
+    width: 100vw;
+    background: #f7e8f2;
+    margin: auto;
+}
+
+.bg_pk2 {
+    width: 100vw;
+    background: #eb6d8e;
+    margin: auto;
+    text-align: center;
+}
+
+.bg_wh {
+    width: 100vw;
+    background: #f7f7f7;
+    margin: auto;
+}
+
+
+/* ボックス
+******************************************************************************/
+
+.box {
+    background: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    width: 95%;
+}
+
+.box p {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* リターン
+******************************************************************************/
+
+.parent {
+    display: flex;
+}
+
+.child {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .parent {
+        display: block;
+    }
+
+    .child {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* ポップアップ
+******************************************************************************/
+
+.contents .Tittle {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.25em;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.3;
+    border-bottom: 1px solid #dedede;
+}
+
+.contents p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+.popupCheck {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+}
+
+.button label {
+    display: inline-block;
+    padding: 30px;
+    margin: 2.0em;
+    color: #FFFFFF;
+    width: 60%;
+    font-size: 25px;
+    background-color: #eb6d8e;
+    text-decoration: none;
+    border-radius: 20px;
+    -webkit-transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition-property: background-color, -webkit-box-shadow;
+    transition-property: background-color, -webkit-box-shadow;
+    transition-property: background-color, box-shadow;
+    transition-property: background-color, box-shadow, -webkit-box-shadow;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.button label:hover {
+    color: #FFFFFF;
+    background-color: #eb6d8e;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.popupWrap,
+.popupBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 10;
+}
+
+.popupWrap {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    transition: 0.3s cubic-bezier(1, 0, 0, 1);
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    will-change: opacity;
+}
+
+.popupBg {
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: #000;
+    z-index: 2;
+}
+
+.popupBg label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.popupCon {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    width: 92%;
+    max-width: 640px;
+    height: 86%;
+    margin: auto;
+    z-index: 3;
+}
+
+.popupInner {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    height: 100%;
+    padding: 0 1.5em 1.5em;
+    cursor: default;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.popupButton_Close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.popupButton_Close label {
+    display: inline-block;
+    padding: 0.5em;
+    color: #333;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+.popupCheck:not(:checked) ~ .wrapper > *:not(.popupWrap) {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.popupCheck:not(:checked) ~ .wrapper .popupWrap {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popupCheck:checked ~ .wrapper > *:not(.popupWrap) {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+#popup01:checked ~ .wrapper #popup01Con,
+#popup02:checked ~ .wrapper #popup02Con,
+#popup03:checked ~ .wrapper #popup03Con,
+#popup04:checked ~ .wrapper #popup04Con,
+#popup05:checked ~ .wrapper #popup05Con {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popupTittle {
+    padding: 2em 0.5em 1.5em;
+    font-size: 2em;
+    line-height: 1.3;
+    text-align: center;
+    color: #000;
+}
+
+.popupText .popupCover {
+    margin: 0 -1.5em 1em;
+}
+
+.popupText p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+    color: #000;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 70px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #eb6d8e !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slide li {
+    position: relative !important;
+}
+
+.slider_container {
+    position: relative;
+}
+
+/* QA
+******************************************************************************/
+
+
+.faq_box {
+    background: #fff;
+    padding: 0px;
+    margin: 30px auto;
+    border: 3px solid #eb6d8e;
+}
+
+dl.faq dt:before,
+dl.faq dd:before {
+    font-size: 22px;
+    margin-right: .5em;
+    line-height: 1.5;
+}
+
+dl.faq dt:before {
+    content: "Q";
+    font-weight: normal;
+    background: #fff;
+    color: #eb6d8e;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1em;
+    margin-right: .5em;
+    margin-left: .5em;
+    margin-bottom: 0.5em;
+}
+
+dl.faq dd:before {
+    content: "A";
+    font-weight: normal;
+    background: #eb6d8e;
+    color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1em;
+    margin-right: .5em;
+}
+
+
+
+dl.faq dt {
+    font-size: 25px;
+    color: #fff;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    background: #eb6d8e;
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0 15px 0;
+}
+
+dl.faq dd {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.8;
+    margin: 20px;
+    margin-inline-start: 1em;
+}
+
+dl.faq dt {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    dl.faq dt:before {
+        content: "Q";
+        font-size: 2em;
+        font-weight: bold;
+        color: #eb6d8e;
+        text-align: center;
+        display: inline-block;
+        margin-right: .5em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    dl.faq dd:before {
+        content: "A";
+        font-size: 2em;
+        font-weight: bold;
+        background: #eb6d8e;
+        color: #fff;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        display: inline-block;
+        margin-right: .5em;
+    }
+}
+
+/* 追従ボタン
+******************************************************************************/
+
+.footer-fix {
+    bottom: 0px;
+    position: fixed;
+    width: 100vw;
+    background: #eb6d8e;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: solid 5px #fff;
+    z-index: 888;
+}
+
+.footer_tx {
+    width: 38%;
+}
+
+.footer_btn {
+    width: 500px;
+}
+
+.fix {
+    margin: 0 auto;
+    width: 900px;
+    position: relative;
+}
+
+.last-cta,
+footer {
+    position: relative;
+    z-index: 900;
+}
+
+
+/*1000px以下*/
+
+@media only screen and (max-width: 1000px) {
+    .footer-fix {
+        bottom: 0;
+        max-width: 100%;
+        right: 0;
+    }
+
+    .fix img {
+        margin: 0 auto;
+        width: 95%;
+        padding: 10px;
+    }
+
+}
+
+
+/* PC/SP表示切り替え
+******************************************************************************/
+
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+}
+
+
+
+/* フッター
+******************************************************************************/
+
+footer {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+/*1000px以下*/
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        background-color: #666;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+footer p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.fotter_link {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+
+/* レスポンシブ
+******************************************************************************/
+
+
+
+@media only screen and (max-width: 1000px) {
+
+
+    .brRes {
+        content: "";
+    }
+
+    .brRes:after {
+        margin-right: -.333em;
+        content: "";
+    }
+
+}
+
+
+
+
+/* ボタンアニメーション
+******************************************************************************/
+.pulsate-fwd {
+    margin: 0;
+    -webkit-animation: pulsate-fwd 1s linear infinite;
+    animation: pulsate-fwd 1s linear infinite;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-1-20 17:47:55
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
